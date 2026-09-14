@@ -1,0 +1,9 @@
+:root{
+    --brand-card__image: #a1a1a1;
+    --brand-card__imag-span: #5d5d5d;
+    --brand-card__description: #555;
+    --brand-card__button-border: #777;
+    --brand-card__button-color: #333;
+    --brand-card__button-hover-backgound_color: #555;
+    --brand-card__button-hover-color: white;
+}
