@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="brands__title">
+        <h1>conheça nossas marcas</h1>
+    </header>
+
+    <main class="brands__grid">
+
+        <section class="brand-card__kaiak">
+
+            <div class="brand-card__image">
+                <container><img src="" alt="kaiak"></container>
+            </div>
+
+            <article class="brand-card__title">
+                <h2>Kaiak</h2>
+            </article>
+
+            <article class="brand-card__description">
+                <p>
+                    fragrâncias aromáticas para quem busca todo o frecor do mar
+                </p>
+            </article>
+
+            <article class="brand-card__button">
+                <container>
+                    <h3>conhecer</h3>
+                </container>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
