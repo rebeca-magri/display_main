@@ -1,0 +1,88 @@
+
+/* cabeçalho */
+/* seletor: header propriedade width(largura) valor: 800px */
+header {
+    background-color: darkgoldenrod;
+    width: 100vw;
+    height: 10vh;
+}
+
+main{
+background-color: lightpink;
+width: 100vw;
+height: 85vh;
+}
+
+/* rodapé */
+footer{
+    background-color: lightseagreen;
+    width: 100vw;
+    height: 5vh;
+}
+
+a{
+    text-decoration: none; /* Limpando a formatação padrão do link*/
+    font-size: 20px; /* Tamanho da fonte*/
+    color: #fff; /*Cor da fonte*/
+    font-family: Arial, sans-serif; /*Estilo da fonte*/
+   
+}
+
+section{
+    width: 300px;
+    height: 300px;
+    /* bordas */
+    border-width: 2px;
+    border-color: darkgreen;
+    border-radius: 15px;
+    border-style: solid;
+
+    /* margens */
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+
+/* estilizar com o seletor classe */
+.sec-01{
+    border-color: red;
+    background-color: deeppink;
+}
+
+.sec-01 li{
+    color: pink;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.sec-02{
+    border-color: yellow;
+    background-color: chocolate;
+}
+
+li{
+    /* Sem decoração na lista (ponto ou numeração na lista) */
+    list-style: none;
+}
+
+.sumario details{
+    border: 2px solid #fa0202;
+    width: 50%;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.sumario summary{
+    background: #2c2c2c;
+    color: #fff;
+    width: 50%;
+    height: 20px;
+}
+
+.sumario p{
+    color: blueviolet;
+    background-color: cadetblue;
+    line-height: 40px;
+}
