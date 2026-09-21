@@ -65,7 +65,7 @@
     background-color: var(--ui-link-hover-bg);
 }
 
-.color-section_bar{
+.color-section_bar {
     flex-grow: 1;
     height: 100%;
 
@@ -74,32 +74,32 @@
 
 }
 
-.color-section_bar:hover{
+.color-section_bar:hover {
     transform: scaleX(1.02);
     /* Posição do item no eixo Z (profundidade) */
     z-index: 10;
     box-shadow: 0 0 30px rgba(51, 50, 50, 0.3);
 }
 
-.color-section_bar span{
+.color-section_bar span {
     background-color: aliceblue;
     padding: 10px 12px;
     border-radius: 12px;
     visibility: hidden;
 }
 
-.color-section_bar :hover span{
+.color-section_bar :hover span {
     visibility: visible;
 }
 
-.color-section__content{
+.color-section__content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     height: 100vh;
 }
 
-.color-section__palette{
+.color-section__palette {
     display: flex;
     height: 43vh;
     width: 100%;
@@ -107,7 +107,8 @@
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* ESTILIZAÇÃO DO CONTAINER E ITENS DO FAQ*/
-.color-section__faq{
+
+.color-section__faq {
     flex-grow: 1;
     background-color: var(--faq-bg);
     padding: 35px 40px;
@@ -116,18 +117,79 @@
     flex-direction: column;
 }
 
-.color-section__faq-title{
-
+.color-section__faq-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--faq-text-title);
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
 }
 
-.color-section__faq-item{
-
+.color-section__faq-item {
+    background-color: var(--faq-card-bg);
+    border: 1px solid var(--faq-border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 20px; /* Aumentado espaçamento entre as perguntas */
+    transition: all 0.3s ease-in-out;
 }
 
-.color-section__faq-question{
-
+/* Efeito Hover e Foco com Neon nos boxes */
+.color-section__faq-item:hover,
+.color-section__faq-item[open] {
+    background-color: var(--faq-card-hover-bg);
+    border-color: var(--faq-border-neon);
+    /* Efeito neon com box-shadow duplo (linha de contorno vibrante + brilho difuso) */
+    box-shadow: 0 0 8px var(--faq-border-neon), 0 0 20px rgba(157, 38, 239, 0.3);
+    transform: translateY(-2px);
 }
 
-.color-section__faq-answer{
+.color-section__faq-question {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--faq-text-question);
+    cursor: pointer;
 
+    /* Troca de ícone via CSS puro
+    Esconde a seta padrão nos navegadores padrão */
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.color-section__faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.color-section__faq-question::after {
+    content: "✦";
+    font-size: 16px;
+    color: var(--faq-border-neon-glow);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.color-section__faq-item[open] .color-section__faq-question::after {
+    transform: rotate(180deg) scale(1.3);
+    color: #fff;
+}
+
+.color-section__faq-item:hover .color-section__faq-question {
+    color: #fff;
+}
+
+.color-section__faq-answer {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--faq-text-answer);
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    transition: color 0.3s ease;
+}
+
+.color-section__faq-answer:hover {
+    color: #fff;
 }
