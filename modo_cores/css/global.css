@@ -92,87 +92,42 @@
     visibility: visible;
 }
 
-.color-section_bar--rgb-1{
-    background-color: var(--color-rgb-1)
-}
-.color-section_bar--rgb-2{
-    background-color: var(--color-rgb-2)
-}
-.color-section_bar--rgb-3{
-    background-color: var(--color-rgb-3)
-}
-.color-section_bar--rgb-4{
-    background-color: var(--color-rgb-4)
-}
-.color-section_bar--rgb-5{
-    background-color: var(--color-rgb-5)
-}
-.color-section_bar--rgb-6{
-    background-color: var(--color-rgb-6)
+.color-section__content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
 }
 
-
-
-.color-section_bar--cmyk-1{
-    background-color: var(--color-rgb-1)
-}
-.color-section_bar--cmyk-2{
-    background-color: var(--color-rgb-2)
-}
-.color-section_bar--cmyk-3{
-    background-color: var(--color-rgb-3)
-}
-.color-section_bar--cmyk-4{
-    background-color: var(--color-rgb-4)
-}
-.color-section_bar--cmyk-5{
-    background-color: var(--color-rgb-5)
-}
-.color-section_bar--cmyk-6{
-    background-color: var(--color-rgb-6)
+.color-section__palette{
+    display: flex;
+    height: 43vh;
+    width: 100%;
 }
 
-
-
-.color-section_bar--netflix-1{
-    background-color: var(--color-netflix-1);
-}
-.color-section_bar--netflix-2{
-    background-color: var(--color-netflix-2);
-}
-.color-section_bar--netflix-3{
-    background-color: var(--color-netflix-3);
-}
-
-
-
-.color-section_bar--google-1{
-    background-color: var(--color-google-1);
-}
-.color-section_bar--google-2{
-    background-color: var(--color-google-2);
-}
-.color-section_bar--google-3{
-    background-color: var(--color-google-3);
-}
-.color-section_bar--google-4{
-    background-color: var(--color-google-4);
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* ESTILIZAÇÃO DO CONTAINER E ITENS DO FAQ*/
+.color-section__faq{
+    flex-grow: 1;
+    background-color: var(--faq-bg);
+    padding: 35px 40px;
+    border-top: 1px solid var(--ui-border);
+    display: flex;
+    flex-direction: column;
 }
 
+.color-section__faq-title{
 
+}
 
-.color-section_bar--Facebook-1{
-    background-color: var(--color-facebook-1)
+.color-section__faq-item{
+
 }
-.color-section_bar--Facebook-2{
-    background-color: var(--color-facebook-2)
+
+.color-section__faq-question{
+
 }
-.color-section_bar--Facebook-3{
-    background-color: var(--color-facebook-3)
-}
-.color-section_bar--Facebook-4{
-    background-color: var(--color-facebook-4)
-}
-.color-section_bar--Facebook-5{
-    background-color: var(--color-facebook-5)
+
+.color-section__faq-answer{
+
 }
