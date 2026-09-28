@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hub-IA</title>
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -16,6 +16,7 @@
         background-color: olive;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
+        height: 300vh;
         }
 
         h1{
@@ -28,6 +29,7 @@
             gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 15px;
         }
         
         .box{
@@ -36,6 +38,57 @@
             height: 200px;
             background-color: black;
         }
+
+        .container-position{
+            width: 100%;
+            height: 600px;
+            border: 2px solid black;
+            position: relative;          
+        }
+
+        .fiho-tamanho{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: darkorange;
+        }
+
+        .filho01__container-positon{
+            top: 0;
+            left: 0;
+        }
+
+        .filho02__container-positon{
+            top: 0;
+            right: 0;
+        }
+
+        .filho03__container-positon{
+            bottom: 0;
+            left: 0;
+        }
+
+        .filho04__container-positon{
+            bottom: 0;
+            right: 0;
+        }
+        .whats{
+            width: 75px;
+            height: 75px;
+            background-color: rgb(47, 255, 57);
+            border-radius: 50%;
+            border: 5px solid #fff;
+
+            position: fixed;
+            bottom:100px;
+            right: 60px;
+        }
+
+        .whats img{
+            width: 65px;
+            height: 65px;
+        }
+
 
         @media (min-width: 768px) {
             body {
@@ -54,9 +107,10 @@
             max-width: 450px;        
         }
         }
-    </style>
 
+    </style>
 </head>
+
 <body>
     <h1>Este é um teste de @media</h1>
     <div class="container">
@@ -65,5 +119,16 @@
         <div class="box"></div>
         <div class="box"></div>
     </div>
+
+    <div class="container-position">
+
+        <div class="filho01__container-positon fiho-tamanho"></div>
+        <div class="filho02__container-positon fiho-tamanho"></div>
+        <div class="filho03__container-positon fiho-tamanho"></div>
+        <div class="filho04__container-positon fiho-tamanho"></div>
+        
+    </div>
+
+    <div class="whats"><img src="./_doc/whatsapp.png" alt="whatsapp"></div>
 </body>
 </html>
