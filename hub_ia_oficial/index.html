@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,48 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
 
+    <!-- header -->
     <header class="header">
-        <h1>Hub<mark>IA</mark></h1>
-        <nav>
-            <a href="#" id="#vision">Visão Computacional</a>
-            <a href="#" id="#nlp">PLN</a>
-            <a href="#" id="#generative">IA Generativa</a>
-            <a href="#" id="#predictive">IA Preditiva</a>
-            <a href="#" id="#faq">FAQ</a>
+        <div class="header__brand">
+            <h1 class="header__title">Hub<mark>IA</mark></h1>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#vision" class="nav__link">Visão Computacional</a></li>
+                <li class="nav__item"><a href="#nlp" class="nav__link">PLN</a></li>
+                <li class="nav__item"><a href="#generative" class="nav__link">IA Generativa</a></li>
+                <li class="nav__item"><a href="#predictive" class="nav__link">IA Preditiva</a></li>
+                <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="#vision" class=""></section>
-        <section id="#nlp" class=""></section>
-        <section id="#generative" class=""></section>
-        <section id="#predictive" class=""></section>
-        <section id="#faq" class=""></section>
+        <!-- seção visão computacional -->
+        <section id="vision" class="section-ia"></section>
+
+        <!-- seção pln -->
+        <section id="nlp" class="section-ia section-ia--reverse"></section>
+
+        <!-- seção ia generativa -->
+        <section id="generative" class="section-ia"></section>
+
+        <!-- seção ia preditiva -->
+        <section id="predictive" class="section-ia section-ia--reverse"></section>
+
+        <!-- seção faq (perguntas) // não fala de ia // -->
+        <section id="faq" class="faq"></section>
     </main>
 
-    <footer></footer>
-    
+    <!-- footer -->
+    <footer class="footer">
+
+    </footer>
+
 </body>
+
 </html>
