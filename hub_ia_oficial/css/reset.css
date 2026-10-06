@@ -1,7 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
 }
 
 html {
@@ -13,31 +13,43 @@ html {
   color: var(--color-text-main);
 }
 
-body {
-  /* garante o texto base do documento em 16px (1.6rem) */
-  font-size: var(--font-size-base);
-  padding-top: var(--header-height);
-  padding-bottom: var(--footer-height);
-  line-height: 1.6;
+
+body{
+    /* Garante o texto base do documento em 16px (1.6rem */
+    font-size: var(--font-size-base);
+    padding-top:var(--header-height) ;
+    padding-bottom: var(--footer-height);
+    line-height: 1.6;
+
+
 }
 
-ul, ol {
-  list-style: none;
+ul, ol{
+
+    list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+
+a{
+    text-decoration: none;
+    /* Header as cores do pai */
+    color: inherit;
+
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
 }
 
-mark {
-  background-color: var(--color-highlight);
-  padding: 2px 6px;
-  border-radius: 4px;
+
+mark{
+
+    background-color: var(--color-highlight);
+    padding: 2px 6px ;
+    border-radius: 4px;
 }
+
+
